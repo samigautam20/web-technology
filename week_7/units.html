@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --bold:bolder;
+            --background-color:lavender;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+            background-color: brown;
+            
+        }
+        .parent{
+            width: 80vw;
+            height: 70vh;
+            background-color: aquamarine;
+            font-size: 50px;
+        }
+        div{
+            width: 100%;
+            height: 80%;
+            background-color: var(--background-color);
+            font-weight: var(--bold);
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, excepturi omnis. Culpa, ad. Repudiandae animi, alias veritatis laboriosam fuga non! Veniam,
+             odit aliquid eos numquam amet fugiat molestiae beatae at!</p>
+    </div>
+    </div>
+</body>
+</html>
