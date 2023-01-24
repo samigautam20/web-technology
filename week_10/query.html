@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selector</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, quaerat?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, quaerat?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, quaerat?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, quaerat?</p> 
+    <script>
+        //document.querySelector("p").style.backgroundColor="plum";
+        var select= document.querySelectorAll("p");
+        for(var i=0; i<=select.length;i++){
+        select[i].style.backgroundColor="plum";
+        }
+    </script>
+</body>
+</html>
