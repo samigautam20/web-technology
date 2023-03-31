@@ -1,0 +1,73 @@
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171__480.jpg");
+    background-size: cover;
+}
+
+.image1{
+    position: absolute;
+    right: 86%;
+    margin-top: 20px;  
+}
+
+.con1{
+    position: absolute;
+    margin-left: 26px;
+    margin-top: 365px;
+    font-size: xx-large;
+}
+
+.d2{
+    position: absolute;
+    margin-left: 26px;
+    margin-top: 260px;
+    font-size: larger;
+}
+
+.tem1{
+    position: absolute;
+    left: 16%;
+    margin-top: 79px;
+    font-size: 3em;
+}
+
+.name{
+    position: absolute;
+    margin-left: 700px;
+    margin-top: 10px;
+    font-size: 2em; 
+    color: red;
+   
+}
+
+.Pressure{
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 411px;
+}
+
+.hum1{
+    position: absolute;
+    margin-left: 0px;
+    bottom: -370px;
+}
+
+.w1{
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 440px;
+}
+
+.de{
+    position: absolute;
+    
+    top: 306px;
+}
+
+.layout{
+    position: absolute;
+    margin-left: 30px;
+    top: 30%;
+}
+.wind {
+    color: brown;
+}

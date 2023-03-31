@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <script language="Javascript" type="text/Javascript">
+        function clickevent() {
+            document.write("This is herald");
+        }
+
+        function mouseoverevent() {
+            alert("This is nepal");
+        }
+    </script>
+    <p onmouseover="mouseoverevent()">Keep cursor over me</p>
+    <form>
+        <input type="button" onclick="clickevent()" value="Who's this?"/>
+    </form>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+    <p id="demo"></p>
+</body>
+</html>

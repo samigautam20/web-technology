@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function step1(data) {
+ return new Promise(function(resolve, reject) {
+ console.log("Step 1 with " + data + " is complete");
+ resolve("more data");
+ });
+}
+function step2(data) {
+ return new Promise(function(resolve, reject) {
+ console.log("Step 2 with " + data + " is complete");
+ resolve("even more data");
+ });
+}
+function step3(data) {
+ return new Promise(function(resolve, reject) {
+ console.log("Step 3 with " + data + " is complete");
+ resolve();
+ });
+}
+step1("data")
+ .then(step2)
+ .then(step3)
+ .then(function() {
+ console.log("Allsteps are complete");
+ });
+    </script>
+</body>
+</html>

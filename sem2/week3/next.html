@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript </h2>
+    <p>This example adds multiple events to the same element.</p>
+    <button id="button">Click me</button>
+    <p id="p"></p>
+    <p id="p1"></p>
+    <script>
+        function fun() {
+            alert("Welcome!");
+        }
+        function fun1() {
+            document.getElementById("p").innerHTML="This is second function";
+        }
+        function fun2() {
+            document.getElementById("p1").innerHTML="This is Third function";
+        }
+        var mybutton=document.getElementById("button");
+        mybutton.addEventListener("click",fun);
+        mybutton.addEventListener("click",fun1);
+        mybutton.addEventListener("click",fun2);
+    </script>
+</body>
+</html>
