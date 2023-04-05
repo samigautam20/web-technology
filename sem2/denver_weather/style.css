@@ -1,0 +1,97 @@
+/* The body element is set to be a flex container with centered content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #222;
+    background-image: url('thunderstorm-3625405__480.jpg');
+    font-size: 120%;
+  }
+  
+  /*The card class sets the styling for the card element*/
+  .card {
+    background: #221919d0;
+    color: rgb(184, 166, 166);
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+  }
+  
+  /* The search class sets the styling for the search element */
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* The button element sets the styling for all buttons */
+  button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  /* The input element with class 'search-bar' sets the styling for the search bar */
+  input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+  }
+  
+  /* The button element when hovered sets the styling for the button when the cursor is on it */
+  button:hover {
+    background: #7c7c7c6b;
+  }
+  
+  /* The h1 element with class 'temp' sets the styling for the temperature text */
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
+  
+  /* The element with class 'flex' sets the styling for elements that use flexbox */
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* The element with class 'description' sets the styling for the description text */
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+  
+  /* The element with class 'weather loading' sets the styling for the loading spinner */
+  .weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+  
+  /* The element with class 'weather loading' when followed by the pseudo element ':after' sets the styling for the loading text */
+  .weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
